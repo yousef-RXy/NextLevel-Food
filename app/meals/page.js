@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { MealsGrid } from '@/components';
 import { getMeals } from '@/lib/meals';
 
-function Meals() {
-  const meals = getMeals();
+async function Meals() {
+  const meals = await getMeals();
 
   return (
     <>
