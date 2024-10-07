@@ -3,8 +3,11 @@ import React from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
 import { MealsGrid } from '@/components';
+import { getMeals } from '@/lib/meals';
 
 function Meals() {
+  const meals = getMeals();
+
   return (
     <>
       <header className={styles.header}>
@@ -21,7 +24,7 @@ function Meals() {
         </p>
       </header>
       <main className={styles.main}>
-        <MealsGrid meals={[]} />
+        <MealsGrid meals={meals} />
       </main>
     </>
   );
