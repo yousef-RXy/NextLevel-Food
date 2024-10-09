@@ -29,10 +29,12 @@ function ImagePicker({ label, name }) {
     <div className={styles.picker}>
       <label htmlFor={name}>{label}</label>
       <div className={styles.controls}>
-        {preview && (
+        {preview ? (
           <div className={styles.preview}>
             <Image fill src={preview} alt="Preview" />
           </div>
+        ) : (
+          <div className={styles.placeholder}>No image picked</div>
         )}
         <input
           ref={input}
