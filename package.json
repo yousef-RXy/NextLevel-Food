@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next dev",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,8 +13,7 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "slugify": "^1.6.6",
-    "xss": "^1.0.15"
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "eslint": "^8",
